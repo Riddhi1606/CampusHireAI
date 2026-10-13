@@ -410,7 +410,7 @@ Replace placeholders with the real names of all five team members. This
 table is a role-planning guide, not proof that tasks are complete.
 
   ------------------------------------------------------------------------------------------------------------------------
-  Week        Riddhi Sharma --- Java Member 2 --- Frontend/UI Member 3 ---          Member 4 ---     Member 5 ---
+  Week        Riddhi Sharma --- Java Sai--- Frontend/UI       Saloni Kumari         Shubham Purohit     Toyeshh 
               backend / coordination                          MySQL/JDBC            Matching logic   QA/deployment/docs
   ----------- ---------------------- ------------------------ --------------------- ---------------- ---------------------
   **1**       Scope and requirements User journeys            Identify data         Matching         Reporting/evidence
@@ -511,7 +511,7 @@ additional automated tests.
   Member                  Responsibility
   ----------------------- -------------------------------------------
   **Riddhi Sharma**       Java backend and project coordination
-  **Sai Pradad**          Frontend and UI
+  **Sai Prasad**          Frontend and UI
   **Saloni Kumari**       MySQL and JDBC
   **Shubham Purohit**     Matching logic and scoring tests
   **Toyeshh Somvansi**    QA, deployment support, and documentation
