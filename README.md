@@ -526,12 +526,5 @@ presented as compatibility guidance, not a guarantee of hiring outcomes.
 
 ------------------------------------------------------------------------
 
-```{=html}
-<p align="center">
-```
-`<strong>`{=html}CampusHire AI`</strong>`{=html}`<br>`{=html}
-Intelligent Placement & Skill Matching Platform`<br>`{=html} Developed
-by Riddhi Sharma & Team
-```{=html}
-</p>
-```
+CampusHire AI Intelligent Placement & Skill Matching Platform` 
+Developed by Team Code Avengers
