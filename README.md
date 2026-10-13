@@ -351,8 +351,8 @@ as **Deployment in Progress**.
 This is the high-level plan. Weekly portal submissions should describe
 the work actually completed, not just the planned work.
 
-  -----------------------------------------------------------------------
-  Week                    Main focus              Expected deliverables
+  ----------------------- ----------------------- ----------------------
+  Week                     Main focus              Expected deliverables
   ----------------------- ----------------------- -----------------------
   **1**                   Requirements and        Problem statement,
                           planning                objectives, scope,
@@ -400,7 +400,7 @@ the work actually completed, not just the planned work.
   **12**                  Deployment and final    Public URL
                           submission              verification, final
                                                   README,
-                                                  screenshots/demo,
+                                                  screenshots,
                                                   report and presentation
   -----------------------------------------------------------------------
 
