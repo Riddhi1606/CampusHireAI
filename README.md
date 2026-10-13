@@ -1,26 +1,4 @@
 # CampusHire AI --- Intelligent Placement & Skill Matching Platform
-
-```{=html}
-<p align="center">
-```
-`<strong>`{=html}A Java-based placement platform for job discovery,
-student profiles, applications, and explainable skill
-matching.`</strong>`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-`<img alt="Java 17" src="https://img.shields.io/badge/Backend-Java%2017-orange">`{=html}
-`<img alt="Servlets and JSP" src="https://img.shields.io/badge/Web-Servlets%20%7C%20JSP-blue">`{=html}
-`<img alt="MySQL" src="https://img.shields.io/badge/Database-MySQL-4479A1">`{=html}
-`<img alt="Tomcat 9" src="https://img.shields.io/badge/Server-Apache%20Tomcat%209-yellow">`{=html}
-`<img alt="Maven" src="https://img.shields.io/badge/Build-Maven%20WAR-red">`{=html}
-`<img alt="Status" src="https://img.shields.io/badge/Status-Deployment%20In%20Progress-orange">`{=html}
-```{=html}
-</p>
-```
 > **Live Demo:** `ADD_VERIFIED_PUBLIC_DEPLOYMENT_URL`\
 > **GitHub Repository:** `ADD_GITHUB_REPOSITORY_URL`\ 
 
