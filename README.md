@@ -1,6 +1,6 @@
 # CampusHire AI --- Intelligent Placement & Skill Matching Platform
 > **Live Demo:** `ADD_VERIFIED_PUBLIC_DEPLOYMENT_URL`\
-> **GitHub Repository:** `ADD_GITHUB_REPOSITORY_URL`\ 
+> **GitHub Repository:** https://github.com/Riddhi1606/CampusHireAI 
 
 > **Status note:** This README is prepared for the final deployment
 > stage. Change the status and add a public URL only after the
