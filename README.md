@@ -1,62 +1,133 @@
-# CampusHire AI — Intelligent Placement & Skill Matching Platform
+# CampusHire AI --- Intelligent Placement & Skill Matching Platform
 
+```{=html}
 <p align="center">
-  <strong>A Java Enterprise placement platform that connects students with relevant job opportunities through explainable, transparent 5-pillar skill matching.</strong>
+```
+`<strong>`{=html}A Java-based placement platform for job discovery,
+student profiles, applications, and explainable skill
+matching.`</strong>`{=html}
+```{=html}
 </p>
-
+```
+```{=html}
 <p align="center">
-  <img alt="Backend-Java" src="https://img.shields.io/badge/Backend-Java%2017-orange">
-  <img alt="Web-Servlets%20JSP" src="https://img.shields.io/badge/Web-Servlets%20%7C%20JSP%20%7C%20JSTL-blue">
-  <img alt="Database-MySQL" src="https://img.shields.io/badge/Database-MySQL%208-4479A1">
-  <img alt="Server-Apache%20Tomcat%209" src="https://img.shields.io/badge/Server-Apache%20Tomcat%209-yellow">
-  <img alt="Security-BCrypt" src="https://img.shields.io/badge/Security-BCrypt%20%7C%20RBAC-green">
-  <img alt="Build-Maven" src="https://img.shields.io/badge/Build-Maven%20WAR-red">
-  <img alt="Project Status-Production Ready" src="https://img.shields.io/badge/Status-Completed-success">
+```
+`<img alt="Java 17" src="https://img.shields.io/badge/Backend-Java%2017-orange">`{=html}
+`<img alt="Servlets and JSP" src="https://img.shields.io/badge/Web-Servlets%20%7C%20JSP-blue">`{=html}
+`<img alt="MySQL" src="https://img.shields.io/badge/Database-MySQL-4479A1">`{=html}
+`<img alt="Tomcat 9" src="https://img.shields.io/badge/Server-Apache%20Tomcat%209-yellow">`{=html}
+`<img alt="Maven" src="https://img.shields.io/badge/Build-Maven%20WAR-red">`{=html}
+`<img alt="Status" src="https://img.shields.io/badge/Status-Deployment%20In%20Progress-orange">`{=html}
+```{=html}
 </p>
+```
+> **Live Demo:** `ADD_VERIFIED_PUBLIC_DEPLOYMENT_URL`\
+> **GitHub Repository:** `ADD_GITHUB_REPOSITORY_URL`\ 
 
----
+> **Status note:** This README is prepared for the final deployment
+> stage. Change the status and add a public URL only after the
+> application is deployed and verified.
+
+------------------------------------------------------------------------
 
 ## 📌 Table of Contents
 
-1. [Executive Summary](#executive-summary)
-2. [Problem Statement & Objectives](#problem-statement--objectives)
-3. [System Architecture](#system-architecture)
-4. [Explainable 5-Pillar Skill-Matching Engine](#explainable-5-pillar-skill-matching-engine)
-5. [Role-Based Feature Matrix](#role-based-feature-matrix)
-6. [Database Schema & Entity Relationships](#database-schema--entity-relationships)
-7. [Default Test & Demo Credentials](#default-test--demo-credentials)
-8. [Local Installation & Setup Guide](#local-installation--setup-guide)
-9. [Project Directory Layout](#project-directory-layout)
-10. [12-Week Development Roadmap & Contribution Log](#12-week-development-roadmap--contribution-log)
-11. [Testing & Quality Assurance](#testing--quality-assurance)
-12. [Deployment & Production Packaging](#deployment--production-packaging)
+-   [Overview](#overview)
+-   [Problem Statement and
+    Objectives](#problem-statement-and-objectives)
+-   [Features](#features)
+-   [Technology Stack](#technology-stack)
+-   [Architecture](#architecture)
+-   [Project Directory Layout](#project-directory-layout)
+-   [Skill-Matching Method](#skill-matching-method)
+-   [Database Design](#database-design)
+-   [Local Setup](#local-setup)
+-   [Production Deployment Checklist](#production-deployment-checklist)
+-   [12-Week Development Roadmap](#12-week-development-roadmap)
+-   [Weekly Contribution Log](#weekly-contribution-log)
+-   [Testing and Security](#testing-and-security)
+-   [Current Status](#current-status)
+-   [Team](#team)
 
----
+## 📖 Overview
 
-## 📖 Executive Summary
+**CampusHire AI** is a web application designed to bring student
+profiles, job opportunities, applications, and skill matching into one
+place. Students can maintain a profile and explore relevant
+opportunities. Recruiters can publish jobs and review applications.
+Administrative features can be provided to authorized administrators
+where implemented.
 
-**CampusHire AI** is a full-featured Java EE / Jakarta web application designed to modernize university placement departments and corporate talent acquisition. By moving away from subjective or black-box recruitment pipelines, CampusHire AI computes an **explainable compatibility score** for every applicant based on mathematically normalized, transparent weighted criteria.
+The planned stack uses a Java backend, JSP-based presentation, JDBC
+database access, and MySQL persistence. The matching module uses an
+explainable weighted scoring approach. A match score is a compatibility
+indicator---not a guarantee of selection or a prediction of hiring
+probability.
 
-Students gain actionable visibility into missing skills (Skill Gap Roadmaps), recruiters receive sorted candidate pipelines with granular match justifications, and university administrators govern the entire placement ecosystem in real-time.
+## 🎯 Problem Statement and Objectives
 
----
+Students may need to search across multiple sources for placement
+opportunities and may not know which skills are missing for a role.
+Recruiters need a structured way to review candidate profiles against
+job requirements. CampusHire AI aims to centralize job discovery and
+applications while making skill alignment more transparent.
 
-## 🎯 Problem Statement & Objectives
+Objectives: - Centralize student profiles and job listings. - Store
+education, skills, projects, and certifications in a structured
+database. - Support job posting and application workflows. - Provide
+explainable compatibility scoring based on defined criteria. - Highlight
+missing skills where the skill-gap module is implemented. - Enforce
+role-based access to protected functions. - Test and deploy the
+application with clear documentation.
 
-### Problem
-- **Fragmented Discovery:** Students struggle to navigate disjointed placement notices across message boards and emails.
-- **Skill Blindspots:** Fresh graduates frequently lack insight into why they are screened out or which exact technologies they need to learn for high-value roles.
-- **Manual Recruiter Screening:** Campus recruiters drown in hundreds of unstructured resumes without clear eligibility or skills verification.
+## Features
 
-### Objectives
-- Establish a single, centralized web application supporting Students, Corporate Recruiters, and Placement Administrators.
-- Implement a **transparent 5-pillar scoring algorithm** implemented in pure Java.
-- Provide a personalized **Market Skill Gap Roadmap** highlighting high-demand competencies.
-- Enforce strict role-based access control (RBAC), BCrypt password hashing, and SQL injection prevention via PreparedStatements.
+The following is the intended feature set. Mark a feature as complete
+only after it has been implemented and tested.
 
----
+### Student
 
-## 🏛 System Architecture
+-   Registration, login, and student profile.
+-   Academic details, skills, projects, and certifications.
+-   Browse active job listings.
+-   View match scores and explanations, if implemented.
+-   Apply for jobs and track application status.
+
+### Recruiter
+
+-   Recruiter login and company profile.
+-   Create, edit, and deactivate job listings.
+-   Define eligibility requirements and required skills.
+-   Review applications and candidate profiles.
+-   View candidate match scores, if implemented.
+
+### Administrator
+
+-   Manage or review users, recruiters, jobs, and skills where
+    implemented.
+-   View platform statistics where implemented.
+-   Administrator accounts must be created through a controlled process,
+    not public self-registration.
+
+## 👨‍💻 Technology Stack
+
+  Layer                Technology
+  -------------------- ------------------------------------------------
+  Backend              Java
+  Web                  Java Servlets, JSP
+  Frontend             HTML5, CSS3, JavaScript, Bootstrap if included
+  Database             MySQL
+  Database access      JDBC
+  Application server   Apache Tomcat 9
+  IDE                  Eclipse IDE
+  Build                Maven / WAR
+  Version control      Git and GitHub
+
+**Backend requirement:** The application backend is Java-based. Tomcat 9
+uses `javax.servlet`; Tomcat 10+ uses `jakarta.servlet` and may require
+code/dependency changes.
+
+## 🏛 Architecture
 
 The project adheres to a strict MVC (Model-View-Controller) enterprise layered architecture:
 
@@ -81,7 +152,7 @@ The project adheres to a strict MVC (Model-View-Controller) enterprise layered a
          +---------v---------+                 +---------v---------+
          |   Service Layer   |                 | Presentation / JSP|
          | (Auth, Matching,  |                 | (Bootstrap 5, JS, |
-         | Student, Recruiter|                 | JSTL, Chart.js)   |
+         |Student, Recruiter)|                 | JSTL, Chart.js)   |
          +---------+---------+                 +-------------------+
                    |
          +---------v---------+
@@ -102,124 +173,9 @@ The project adheres to a strict MVC (Model-View-Controller) enterprise layered a
 
 ---
 
-## 🧮 Explainable 5-Pillar Skill-Matching Engine
-
-The compatibility score between a Candidate ($C$) and a Job Opening ($J$) is calculated using a rule-based formula normalized between 0 and 100%:
-
-$$\text{Overall Compatibility Score} = \sum_{i=1}^{5} (W_i \times S_i)$$
-
-| Pillar | Criterion | Weight ($W_i$) | Normalization Formula ($S_i$) |
-|---|---|:---:|---|
-| **1** | **Required Technical Skills** | **50%** | Ratio of matched mandatory ($1.5\times$) & preferred ($1.0\times$) skills with proficiency modifiers (Advanced: $+10\%$, Beginner: $-15\%$). |
-| **2** | **CGPA / Academic Cutoff** | **20%** | Validates cutoff ($\text{CGPA}_{student} \ge \text{CGPA}_{min}$). Includes academic excellence scaling up to 10.0. Penalty applied if cutoff not met. |
-| **3** | **Branch Eligibility** | **15%** | Evaluates listed target branches (e.g., CSE, IT, ECE, or All-disciplines). |
-| **4** | **Verified Certifications** | **10%** | Counts accredited credentials (AWS, Oracle, Google Cloud) and relevance to job tech stack. |
-| **5** | **Projects Portfolio** | **5%** | Evaluates GitHub projects and tech stack keywords overlap. |
-| **Total** | | **100%** | Final rounded score with actionable advice and missing skill badges. |
-
----
-
-## 👥 Role-Based Feature Matrix
-
-| Feature | Student | Recruiter | Administrator |
-|---|:---:|:---:|:---:|
-| Self-Registration & BCrypt Auth | ✅ | ✅ | 🔒 (Controlled only) |
-| Academic Profile (CGPA, Branch, Year) | ✅ | — | ✅ (Review only) |
-| Skill Management (Proficiency levels) | ✅ | — | ✅ (Master Catalog) |
-| Project & Certification Portfolio | ✅ | — | — |
-| Job Exploration & Live Compatibility | ✅ | — | ✅ (Moderation) |
-| 1-Click Application Submission | ✅ | — | — |
-| Status Tracking (Applied &rarr; Offer) | ✅ | ✅ | ✅ |
-| Skill Gap Roadmap & Upskilling Advice | ✅ | — | — |
-| Post/Edit Job with Skill Weights | — | ✅ | ✅ |
-| Candidate Pipeline Evaluation | — | ✅ | — |
-| Interview Scheduling & Notes | — | ✅ | — |
-| Platform Analytics & In-Demand Charts | — | — | ✅ |
-
----
-
-## 🗄 Database Schema & Entity Relationships
-
-The relational database is named `campushire_ai` and consists of 11 normalized tables:
-
-1. `users`: Credentials, email, BCrypt password, system role (`STUDENT`, `RECRUITER`, `ADMIN`), active status.
-2. `students`: Education profile, college, branch, CGPA, graduation year, phone, resume URL, GitHub/LinkedIn.
-3. `companies`: Recruiter organization profile, industry, website, location, logo URL.
-4. `skills`: Master taxonomy catalog with category classifications.
-5. `student_skills`: Foreign key bridge with `proficiency` (`BEGINNER`, `INTERMEDIATE`, `ADVANCED`).
-6. `projects`: Student software portfolio items with tech stack and repository URLs.
-7. `certifications`: Professional licenses and verification links.
-8. `jobs`: Placement openings, package/CTC, min CGPA, target branches, deadlines, status.
-9. `job_skills`: Job requirements with `is_mandatory` weightage flags.
-10. `applications`: Application status pipeline (`APPLIED`, `IN_REVIEW`, `SHORTLISTED`, `INTERVIEW_SCHEDULED`, `OFFERED`, `REJECTED`), interview date, recruiter feedback notes.
-11. `recommendations`: Cached explainable score breakdowns.
-
----
-
-## 🔑 Default Test & Demo Credentials
-
-Pre-loaded with sample data in `database/seed_data.sql`:
-
-| Role | Email Address | Password | Profile Details |
-|---|---|---|---|
-| **Student (High Match)** | `riddhi.sharma@college.edu` | `student123` | B.Tech CSE, 9.25 CGPA, Java/Spring Boot/Docker/AWS certified |
-| **Student (Full Stack)** | `rahul.verma@college.edu` | `student123` | B.Tech IT, 8.60 CGPA, React, Node.js, Spring Boot |
-| **Student (ECE / Embedded)** | `priya.patel@college.edu` | `student123` | B.Tech ECE, 7.85 CGPA, C++, Python, Azure certified |
-| **Recruiter 1** | `recruiter@google.com` | `recruiter123` | Google India (SDE-1 & ML Internships) |
-| **Recruiter 2** | `recruiter@microsoft.com` | `recruiter123` | Microsoft (Azure Cloud & Distributed Systems) |
-| **Recruiter 3** | `recruiter@infosys.com` | `recruiter123` | Infosys Technologies (Systems Engineer) |
-| **System Administrator** | `admin@campushire.ai` | `admin123` | Root Governance & Analytics Dashboard |
-
-*Note: On the login page, you can also use the 1-Click quick fill buttons to instantly test any profile without typing credentials!*
-
----
-
-## ⚙️ Local Installation & Setup Guide
-
-### Prerequisites
-- **JDK 17** or higher
-- **MySQL Server 8.0**
-- **Apache Tomcat 9.0**
-- **Eclipse IDE for Enterprise Java and Web Developers** (or IntelliJ IDEA Ultimate)
-- **Maven** (built into Eclipse / IntelliJ)
-
-### Step 1: Database Setup
-1. Open MySQL Workbench or MySQL CLI:
-   ```bash
-   mysql -u root -p
-   ```
-2. Execute the schema script:
-   ```sql
-   source /path/to/CampusHireAI/database/schema.sql;
-   ```
-3. Load the sample evaluation data:
-   ```sql
-   source /path/to/CampusHireAI/database/seed_data.sql;
-   ```
-
-### Step 2: Configure Database Credentials
-Edit `src/main/resources/db.properties` with your local MySQL password:
-```properties
-db.driver=com.mysql.cj.jdbc.Driver
-db.url=jdbc:mysql://localhost:3306/campushire_ai?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata&characterEncoding=UTF-8
-db.username=root
-db.password=YOUR_MYSQL_PASSWORD
-```
-
-### Step 3: Import into Eclipse IDE
-1. Open Eclipse &rarr; **File** &rarr; **Import** &rarr; **Maven** &rarr; **Existing Maven Projects**.
-2. Browse to the `CampusHireAI` root folder and click **Finish**.
-3. Right click project &rarr; **Maven** &rarr; **Update Project** (Alt + F5).
-4. Configure Apache Tomcat 9 under the **Servers** tab.
-5. Right click project &rarr; **Run As** &rarr; **Run on Server** &rarr; select Tomcat 9.
-
-### Step 4: Access in Web Browser
-Open your browser and navigate to:
-```text
-http://localhost:8080/CampusHireAI/
-```
-
----
+Adjust this diagram to match the actual implementation. Show a
+connection pool or additional middleware only if it is configured and
+used.
 
 ## 📁 Project Directory Layout
 
@@ -266,42 +222,338 @@ CampusHireAI/
 
 ---
 
-## 🗓 12-Week Development Roadmap & Contribution Log
+## 🧮 Skill-Matching Method
 
-| Week | Goal | Deliverables | Key Contributors |
-|:---:|---|---|---|
-| **1-2** | Requirements, Architecture & DB | SRS document, MVC layout, MySQL schema DDL, ER model | Riddhi Sharma & Team |
-| **3-4** | Project Setup & Authentication | Maven configuration, BCrypt security, Login/Register Servlets, RBAC AuthFilter | Riddhi Sharma & Team |
-| **5-6** | Student Profile & Portfolio | Student profile CRUD, Skills taxonomy, Projects, Certifications | Riddhi Sharma & Team |
-| **7-8** | Recruiter Job Management | Company profiles, Job creation, Mandatory/Preferred skill tagging, Application submission | Riddhi Sharma & Team |
-| **9-10**| Explainable Matching Engine | Pure Java 5-pillar matching formula, Skill gap roadmap, Admin oversight | Riddhi Sharma & Team |
-| **11-12**| Testing, UI Polish & Packaging | Unit/functional testing, Edge cases, WAR packaging, Final documentation | Riddhi Sharma & Team |
+The proposed explainable scoring model uses five weighted criteria:
 
----
+  Criterion                       Proposed Weight
+  ----------------------------- -----------------
+  Required skill match                        50%
+  CGPA / academic eligibility                 20%
+  Branch eligibility                          15%
+  Relevant certifications                     10%
+  Relevant projects                            5%
+  **Total**                              **100%**
 
-## 🧪 Testing & Quality Assurance
+A general representation is:
 
-1. **Authentication Testing:** Validated BCrypt password hashing, session fixation prevention, and invalid credential handling.
-2. **Authorization Testing:** Verified that students cannot access `/recruiter/*` or `/admin/*` routes (redirects to 403 Forbidden).
-3. **Data Integrity Testing:** Verified foreign keys and cascade deletions across students, jobs, skills, and applications.
-4. **Matching Formula Boundary Cases:** Tested 0% skill match, CGPA below cutoff, mismatched engineering branch, and multi-skill combinations against manual calculations.
+`Compatibility Score = Σ (criterion weight × normalized criterion score)`
 
----
+Each criterion score should be normalized from 0 to 100, and the final
+score should be bounded between 0 and 100. The exact calculation must
+match the Java implementation. This is a rule-based compatibility score,
+not a scientifically validated hiring model.
 
-## 📦 Deployment & Production Packaging
+## 🗄 Database Design
 
-To build the production-ready WAR (Web Application Archive) file:
-```bash
-mvn clean package
+Confirm these table names against the SQL scripts in the repository:
+
+  Table               Purpose
+  ------------------- -------------------------------------------------
+  `users`             User identity, email, hashed password, and role
+  `students`          Student education and profile details
+  `companies`         Recruiter/company profile
+  `skills`            Shared skill catalogue
+  `student_skills`    Skills associated with students
+  `projects`          Student project portfolio
+  `certifications`    Student certifications
+  `jobs`              Job listings and eligibility criteria
+  `job_skills`        Skills required for each job
+  `applications`      Job applications and statuses
+  `recommendations`   Stored matching scores, if used
+
+Document additional tables only if they exist in the final schema. Keep
+this section synchronized with `database/schema.sql`.
+
+## ⚙️ Local Setup
+
+### Prerequisites
+
+-   JDK version configured in `pom.xml` (JDK 17 is the planned
+    baseline).
+-   Eclipse IDE for Enterprise Java and Web Developers.
+-   Apache Tomcat 9 for a `javax.servlet`-based project.
+-   MySQL Server and MySQL Workbench.
+-   Git and Maven support.
+
+### 1. Clone the repository
+
+``` bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd CampusHireAI
 ```
-This generates `target/CampusHireAI.war`. Deploy this WAR to any Apache Tomcat 9+ webapps directory:
-```bash
-cp target/CampusHireAI.war /opt/tomcat/webapps/
+
+Replace the placeholder with the real repository URL.
+
+### 2. Create the database
+
+1.  Start MySQL Server and connect through MySQL Workbench.
+2.  Open `database/schema.sql` and execute it.
+3.  Execute `database/seed_data.sql` only if it exists and contains safe
+    dummy data.
+4.  Confirm the database and tables were created.
+
+Use the database name specified by your SQL scripts if it differs from
+`campushire_ai`.
+
+### 3. Configure database connectivity
+
+Configure the JDBC URL, username, and password using the method
+supported by your application. Example properties:
+
+``` properties
+db.url=jdbc:mysql://localhost:3306/campushire_ai?serverTimezone=Asia/Kolkata
+db.username=YOUR_LOCAL_DB_USERNAME
+db.password=YOUR_LOCAL_DB_PASSWORD
 ```
 
----
+These property names are examples and must match your actual connection
+utility. Never commit real credentials. For production, use environment
+variables or the hosting provider's secret configuration.
 
+### 4. Import into Eclipse
+
+1.  Open Eclipse.
+2.  Select **File → Import → Maven → Existing Maven Projects**.
+3.  Select the project root and finish the import.
+4.  Wait for dependencies to resolve.
+5.  Verify the JDK and project build path.
+6.  Configure Tomcat 9 in the **Servers** view.
+7.  Right-click the project and select **Run As → Run on Server**.
+
+The local URL is typically `http://localhost:8080/CampusHireAI/`, but
+the context path may differ. A localhost URL is not a public deployment
+URL.
+
+## 📦 Production Deployment Checklist
+
+Deployment is complete only after the application is deployed to a
+public hosting environment and verified through its public URL.
+
+### Before deployment
+
+-   [ ] WAR build succeeds.
+-   [ ] Hosting supports the required Java and Servlet/Tomcat versions.
+-   [ ] Production MySQL database is reachable by the application.
+-   [ ] Production credentials are stored outside source control.
+-   [ ] Production schema is applied.
+-   [ ] Production configuration does not use local-only file paths or
+    `localhost` database settings.
+-   [ ] Public registration cannot create administrator accounts.
+-   [ ] Errors do not expose SQL statements, stack traces, or secrets.
+
+### Deploy and verify
+
+-   [ ] Deploy the WAR using the hosting provider's supported process.
+-   [ ] Configure HTTPS and secure session-cookie settings where
+    supported.
+-   [ ] Open the public URL in a private/incognito browser window.
+-   [ ] Test registration, login, logout, and role restrictions.
+-   [ ] Test implemented student and recruiter workflows.
+-   [ ] Verify production database reads and writes.
+-   [ ] Test matching scores against known examples, if the matching
+    module is enabled.
+-   [ ] Check application logs and resolve startup/runtime errors.
+-   [ ] Capture demo screenshots without exposing private information.
+
+### Final deployment details
+
+Fill these in only after successful deployment:
+
+-   **Public application URL:** `ADD_VERIFIED_HTTPS_URL`
+-   **Hosting platform:** `ADD_HOSTING_PROVIDER`
+-   **Deployment date:** `YYYY-MM-DD`
+-   **Verified commit:** `ADD_GIT_COMMIT_HASH`
+
+Do not invent a live URL. Until deployment is complete, keep the status
+as **Deployment in Progress**.
+
+## 🗓 12-Week Development Roadmap
+
+This is the high-level plan. Weekly portal submissions should describe
+the work actually completed, not just the planned work.
+
+  -----------------------------------------------------------------------
+  Week                    Main focus              Expected deliverables
+  ----------------------- ----------------------- -----------------------
+  **1**                   Requirements and        Problem statement,
+                          planning                objectives, scope,
+                                                  roles, task allocation
+
+  **2**                   Architecture and        Use cases, MVC design,
+                          database design         ER diagram, initial
+                                                  schema
+
+  **3**                   Development environment Eclipse/Maven project,
+                                                  Tomcat setup, JDBC
+                                                  connection test
+
+  **4**                   Authentication          Registration/login,
+                                                  password hashing,
+                                                  validation, sessions
+
+  **5**                   Student profile         Profile create/update
+                                                  and academic details
+
+  **6**                   Student portfolio       Skills, projects,
+                                                  certifications and
+                                                  persistence
+
+  **7**                   Recruiter/company       Company profile and job
+                                                  CRUD
+
+  **8**                   Job discovery and       Job listing/search,
+                          applications            application workflow,
+                                                  status tracking
+
+  **9**                   Matching engine         Java scoring logic and
+                                                  test cases
+
+  **10**                  Integration and UI      Integration fixes,
+                                                  responsive UI, admin
+                                                  functions if
+                                                  implemented
+
+  **11**                  Testing and deployment  Functional/security
+                          preparation             checks, bug fixes, WAR
+                                                  build, hosting
+                                                  configuration
+
+  **12**                  Deployment and final    Public URL
+                          submission              verification, final
+                                                  README,
+                                                  screenshots/demo,
+                                                  report and presentation
+  -----------------------------------------------------------------------
+
+## 🗓️ Weekly Contribution Log
+
+Replace placeholders with the real names of all five team members. This
+table is a role-planning guide, not proof that tasks are complete.
+
+  ------------------------------------------------------------------------------------------------------------------------
+  Week        Riddhi Sharma --- Java Member 2 --- Frontend/UI Member 3 ---          Member 4 ---     Member 5 ---
+              backend / coordination                          MySQL/JDBC            Matching logic   QA/deployment/docs
+  ----------- ---------------------- ------------------------ --------------------- ---------------- ---------------------
+  **1**       Scope and requirements User journeys            Identify data         Matching         Reporting/evidence
+                                                              entities              requirements     format
+
+  **2**       Review architecture    Wireframes               ER diagram/schema     Scoring criteria Acceptance criteria
+
+  **3**       Java project setup     Base page layout         Schema and JDBC test  Sample matching  Git workflow and
+                                                                                    cases            setup notes
+
+  **4**       Auth                   Login/register UI        User                  Define matching  Test auth cases
+              controllers/services                            queries/constraints   inputs           
+
+  **5**       Profile workflow       Profile UI               Student/profile       Skill            Profile validation
+                                                              queries               normalization    
+                                                                                    rules            
+
+  **6**       Portfolio handling     Projects/certification   Related DAO methods   Portfolio        Persistence tests
+                                     UI                                             scoring inputs   
+
+  **7**       Job workflow/access    Recruiter screens        Company/job queries   Eligibility and  Recruiter permission
+                                                                                    skill rules      tests
+
+  **8**       Application workflow   Job list/details/apply   Application queries   Prepare match    Duplicate/status
+                                     UI                                             test data        tests
+
+  **9**       Integrate matching     Match-score display      Score persistence if  Implement/test   Manual score
+              service                                         needed                scoring          comparison
+
+  **10**      Integration and bug    Responsive polish        Data integrity checks Boundary-case    Regression tests
+              fixes                                                                 tests            
+
+  **11**      Backend fixes/WAR      UI fixes                 Production DB checks  Retest matching  Deployment smoke-test
+              build                                                                                  plan
+
+  **12**      Final integration/demo Final screenshots        Schema documentation  Scoring          Deployment
+                                                                                    explanation      verification/report
+  ------------------------------------------------------------------------------------------------------------------------
+
+## 🧪 Testing and Security
+
+Mark a testing item complete only after testing the current build.
+
+-   [ ] Valid registration succeeds and invalid inputs are handled.
+-   [ ] Login rejects incorrect credentials.
+-   [ ] Logout invalidates the session.
+-   [ ] Student, recruiter, and admin routes enforce authorization.
+-   [ ] Database operations use parameterized queries.
+-   [ ] Profile, job, and application changes persist correctly.
+-   [ ] Duplicate applications are handled according to project rules.
+-   [ ] Matching scores are checked against manual examples, if
+    implemented.
+-   [ ] Empty states and database errors are handled safely.
+-   [ ] Core workflows pass a smoke test on the deployed URL.
+
+Security checklist: - Hash passwords using BCrypt or another suitable
+password-hashing function; never store plaintext passwords. - Validate
+input on the server and use `PreparedStatement`. - Enforce authorization
+for every protected operation. - Never allow public registration as
+`ADMIN`. - Regenerate the session ID after login and invalidate the
+session on logout. - Escape user-generated content before rendering
+HTML. - Add CSRF protection to state-changing forms. - Keep passwords,
+tokens, and private configuration out of Git. - Use HTTPS and secure
+session-cookie settings in production. - Use dummy demo data and do not
+publish real student records. - Do not publish reusable admin passwords
+in this README.
+
+## ⏱️ Current Status
+
+Update this checklist according to the real build:
+
+-   [ ] Database schema verified
+-   [ ] JDBC connection verified
+-   [ ] Authentication and authorization tested
+-   [ ] Student module tested
+-   [ ] Recruiter/job module tested
+-   [ ] Application workflow tested
+-   [ ] Matching module tested, if included
+-   [ ] Final WAR build successful
+-   [ ] Production database configured
+-   [ ] Public deployment accessible
+-   [ ] Core workflows verified on public deployment
+-   [ ] Final report, presentation, and demo prepared
+
+**Current stage:** Deployment in progress.\
+**Known issues:** Add the actual outstanding issues here.
+
+## 🔮 Known Limitations and Future Enhancements
+
+Document any incomplete modules or limitations of the current release.
+Potential future enhancements include resume parsing, saved jobs, job
+alerts, interview scheduling, notifications, skill-gap learning
+recommendations, recruiter analytics, accessibility improvements, and
+additional automated tests.
+
+## 👥 Team
+
+  Member                  Responsibility
+  ----------------------- -------------------------------------------
+  **Riddhi Sharma**       Java backend and project coordination
+  **Sai Pradad**          Frontend and UI
+  **Saloni Kumari**       MySQL and JDBC
+  **Shubham Purohit**     Matching logic and scoring tests
+  **Toyeshh Somvansi**    QA, deployment support, and documentation
+
+
+## 📝 Academic Project Note
+
+CampusHire AI is an academic team project intended to demonstrate Java
+web development, JSP/Servlets, JDBC, relational database design,
+role-based workflows, testing, and deployment. Matching scores should be
+presented as compatibility guidance, not a guarantee of hiring outcomes.
+
+------------------------------------------------------------------------
+
+```{=html}
 <p align="center">
-  <strong>CampusHire AI</strong> &bull; Intelligent Placement & Skill Matching Platform<br>
-  Academic Major Project developed by <strong>Riddhi Sharma</strong> & Team.
+```
+`<strong>`{=html}CampusHire AI`</strong>`{=html}`<br>`{=html}
+Intelligent Placement & Skill Matching Platform`<br>`{=html} Developed
+by Riddhi Sharma & Team
+```{=html}
 </p>
+```
