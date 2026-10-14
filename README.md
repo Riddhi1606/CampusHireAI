@@ -1,5 +1,5 @@
 # CampusHire AI --- Intelligent Placement & Skill Matching Platform
-> **Live Demo:** `ADD_VERIFIED_PUBLIC_DEPLOYMENT_URL`\
+> **Live Demo:** https://campushireai-t2kk.onrender.com
 > **GitHub Repository:** https://github.com/Riddhi1606/CampusHireAI 
 
 ------------------------------------------------------------------------
