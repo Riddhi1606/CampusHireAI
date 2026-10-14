@@ -8,6 +8,14 @@
 
 ------------------------------------------------------------------------
 
+## **Abstract**
+
+CampusHire AI: Intelligent Placement & Skill Matching Platform is a web-based application designed to simplify and improve the campus placement process by connecting students, recruiters, and administrators through a centralized platform. The system enables students to create profiles, showcase their skills, projects, and certifications, explore job opportunities, and track their applications. Recruiters can manage company details, post job openings, review applications, and identify suitable candidates, while administrators can manage platform activities.
+
+The platform incorporates a rule-based weighted matching mechanism to evaluate the suitability of students for job opportunities. The matching score considers technical skills (50%), CGPA (20%), branch eligibility (15%), certifications (10%), and projects (5%). Based on these criteria, the system calculates match scores and helps students discover relevant opportunities while assisting recruiters in identifying suitable candidates.
+
+The application is developed using Java, JSP, Servlets, JDBC, MySQL, CSS, JavaScript, and Bootstrap, with Apache Tomcat as the application server. The system follows a structured web application architecture to support database connectivity, user authentication, job management, and application tracking. CampusHire AI aims to make campus recruitment more organized, transparent, and efficient by reducing manual effort and improving student-job matching. Deployment and final verification are part of the project’s completion process.
+
 ## 📌 Table of Contents
 
 -   [Overview](#overview)
