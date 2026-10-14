@@ -17,6 +17,7 @@ The application is developed using Java, JSP, Servlets, JDBC, MySQL, CSS, JavaSc
 -   [Overview](#overview)
 -   [Problem Statement and
     Objectives](#problem-statement-and-objectives)
+-   [UML Diagram](#UML-diagram) 
 -   [Features](#features)
 -   [Technology Stack](#technology-stack)
 -   [Architecture](#architecture)
@@ -90,6 +91,16 @@ only after it has been implemented and tested.
 -   View platform statistics where implemented.
 -   Administrator accounts must be created through a controlled process,
     not public self-registration.
+
+## UML Diagram
+<img width="681" height="325" alt="Screenshot 2026-10-13 221801" src="https://github.com/user-attachments/assets/e1377aff-b0d0-40b6-acb7-2c7ebf2d8abf" />
+<img width="677" height="302" alt="Screenshot 2026-10-13 222110" src="https://github.com/user-attachments/assets/ad64840f-3087-466a-aa61-9f654c23bc66" />
+<img width="680" height="296" alt="Screenshot 2026-10-13 222300" src="https://github.com/user-attachments/assets/50e7bc41-1d91-4731-85f1-081bb1f57f4e" />
+<img width="677" height="323" alt="Screenshot 2026-10-13 222423" src="https://github.com/user-attachments/assets/40d6b2e9-7523-4520-a536-325572ccd5bd" />
+<img width="676" height="320" alt="Screenshot 2026-10-13 222838" src="https://github.com/user-attachments/assets/be80db0b-2e97-41b6-8e2c-409c915c18bc" />
+<img width="679" height="322" alt="Screenshot 2026-10-13 222927" src="https://github.com/user-attachments/assets/e29a987c-a34d-4abe-883b-9953b736496c" />
+<img width="677" height="306" alt="Screenshot 2026-10-13 223008" src="https://github.com/user-attachments/assets/5d8d43c9-b7cc-45c1-9d12-b41b7e992199" />
+<img width="679" height="320" alt="Screenshot 2026-10-13 223103" src="https://github.com/user-attachments/assets/6353d3c2-bb69-4abd-aaed-ff7611633fa7" />
 
 ## 👨‍💻 Technology Stack
 
